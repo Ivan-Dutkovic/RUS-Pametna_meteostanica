@@ -87,7 +87,7 @@
       "id": "ultrasonic1",
       "top": 59.1,
       "left": 408.7,
-      "attrs": { "distance": "327" }
+      "attrs": { "distance": "299" }
     },
     {
       "type": "wokwi-led",
@@ -109,7 +109,7 @@
       "id": "led5",
       "top": -138,
       "left": -92.2,
-      "attrs": { "color": "cyan" }
+      "attrs": { "color": "white" }
     },
     {
       "type": "wokwi-resistor",
@@ -153,7 +153,8 @@
       "top": -163.2,
       "left": 105.6,
       "attrs": { "text": "int0" }
-    }
+    },
+    { "type": "wokwi-logic-analyzer", "id": "logic1", "top": 240.35, "left": 403.2, "attrs": {} }
   ],
   "connections": [
     [ "led2:C", "r3:1", "black", [ "v0" ] ],
@@ -180,7 +181,12 @@
     [ "ultrasonic1:ECHO", "uno:5", "green", [ "v-115.2", "h-319.9" ] ],
     [ "btn3:1.r", "uno:2", "green", [ "v86.6", "h-117.8" ] ],
     [ "btn2:1.r", "uno:3", "green", [ "v77", "h-60.1" ] ],
-    [ "btn1:1.r", "uno:21", "green", [ "v67.4", "h116.1" ] ]
+    [ "btn1:1.r", "uno:21", "green", [ "v67.4", "h116.1" ] ],
+    [ "logic1:D0", "uno:14", "green", [ "h0" ] ],
+    [ "logic1:D1", "uno:15", "green", [ "h0" ] ],
+    [ "logic1:D2", "uno:16", "green", [ "h0" ] ],
+    [ "logic1:D3", "uno:17", "green", [ "h0" ] ],
+    [ "logic1:D4", "uno:18", "green", [ "h0" ] ]
   ],
   "dependencies": {}
 }
