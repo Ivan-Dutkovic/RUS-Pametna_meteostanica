@@ -1,5 +1,5 @@
 # Pametna meteostanica
-
+https://wokwi.com/projects/426855239853016065
 ## 📌 Opis projekta
 
 Projekt **pametna meteostanica** omogućuje praćenje vremenskih uvjeta u realnom vremenu kroz kombinaciju senzora i IoT funkcionalnosti.  
