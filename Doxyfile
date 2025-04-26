@@ -991,7 +991,7 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = "C:/FAKS/1. Godina Dipl. 2. Sem/1. blok/Razvoj ugradbenih sustava/RUS-Pametna_meteostanica/Lab2/sketch.ino"
+INPUT                  = sketch.ino
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
