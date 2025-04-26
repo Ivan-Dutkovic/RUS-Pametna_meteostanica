@@ -1,0 +1,29 @@
+name: Generate Doxygen Documentation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - sketch.ino
+      - Doxyfile
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Doxygen
+        run: sudo apt-get update && sudo apt-get install -y doxygen
+
+      - name: Generate Doxygen documentation
+        run: doxygen Doxyfile
+
+      - name: Upload Documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: doxygen-docs
+          path: docs/html/
