@@ -83,5 +83,7 @@ Projekt **pametna meteostanica** omogućuje praćenje vremenskih uvjeta u realno
 
 ## 🖼️ Prikaz sustava
 
+Prikaz simulacije sustava u wokwi platformi
+
 ![image](https://github.com/user-attachments/assets/71e21156-3d1f-4257-93b1-0a4159c83916)
 
