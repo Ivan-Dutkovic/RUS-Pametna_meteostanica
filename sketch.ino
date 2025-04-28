@@ -303,7 +303,7 @@ void sendPushsaferNotification(float temperature, float humidity, int lightInten
     HTTPClient http;
     String message = "Temperatura: " + String(temperature, 1) + "°C\n";
     message       += "Vlaga: "       + String(humidity, 1)    + "%\n";
-    message       += "Svjetlost: "   + getLightLevelDescription(lightIntensity);
+    message       += "Svjetlost: "   + getLightLevelDescription(lightIntensity) + "\n";
     message       += "AQI: "         + getAQIDescription(aqi);
     message.replace(" ", "%20");
     message.replace("°", "%C2%B0");
